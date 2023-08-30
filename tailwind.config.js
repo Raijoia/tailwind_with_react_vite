@@ -15,9 +15,11 @@ export default {
         alura: {
           100: '#167BF7',
           200: '#051933'
-        }  
+        },
       },
-    }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }
