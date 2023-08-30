@@ -1,5 +1,3 @@
-import Input from "../Input/Input"
-
 export default function Form({ onSubmit }) {
   const safeSubmit = event => {
     event.preventDefault()
@@ -10,9 +8,9 @@ export default function Form({ onSubmit }) {
   }
   return (
     <form onSubmit={safeSubmit} className="h-full flex flex-col items-center justify-center -mt-20 mx-5 gap-10">
-      <Input required type="text" placeholder="Insira seu nome..."  />
-      <Input required type="email" placeholder="Insira seu email..." />
-      <button type="submit" className="py-1 px-5 w-full max-w-sm bg-alura-100 dark:bg-dark-200 rounded-full text-gray-200 uppercase outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black">Seguir</button>
+      <input required type="text" placeholder="Insira seu nome..." className="alura-input" />
+      <input required type="email" placeholder="Insira seu email..." className="alura-input" />
+      <button type="submit" className="alura-button">Seguir</button>
     </form>
   )
 }
